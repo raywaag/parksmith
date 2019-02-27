@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CDN jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    // ScrollSpy
+    $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+      });
+
+      // sidenav
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+
+        //google map modals
+        $(function () {
+            //initialize all modals
+            $('.modal').modal();
+            //click on trigger
+            $('.modal-trigger').modal(open);
+        });
+      });
+    </script>
+    <!--CDN Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Thasadith" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ParkSmith</title>
+  </head>
+
+  <body class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="transparent z-depth-0" id="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo white-text">ParkSmith</a>
+            <!--mobile navbar icon-->
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons white-text">menu</i></a>
+            <!--navbar links-->
+            <ul class="right hide-on-med-and-down">
+              <li><a class="white-text" href="#hikes">Hikes</a></li>
+              <li><a class="white-text" href="#hotels">Places to Stay</a></li>
+              <li><a class="white-text" href="#eats">Good Eats</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--MOBILE navbar links-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#hikes">Hikes</a></li>
+      <li><a href="#hotels">Places to Stay</a></li>
+      <li><a href="#eats">Good Eats</a></li>
+    </ul>
+
+    <!--Slider Images-->
+    <section class="slider">
+      <ul class="slides black">
+        <li>
+          <img src="img/sequoia/seq_mast.jpg">
+          <!-- image 1 -->
+          <div class="caption center-align">
+            <section id="search" class="section section-search center white-text scrollspy">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <h1>Sequoia</h1>
+                    <h4>National Park</h4>
+                    <h6>California, USA</h6>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  <!--National Park Cards-->
+  <div id="hikes" class="container">
+    <section class="section">
+      <h3 class="center">Sequoia Hikes</h3>
+      <hr><br>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/hazelwood.jpg">
+            </div>
+            <div class="card-content">
+              <p>This pleasant Sequoia hiking experience will take you along gentle grades through
+                excellent stands of giant sequoias.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Hazelwood Nature Trail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/boole.jpg">
+            </div>
+            <div class="card-content">
+              <p>Boole, the largest giant sequoia on National Forest System Land,
+                is the 8th largest of all known sequoias.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Converse Basin - Boole Tree</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/big_trees.jpg">
+            </div>
+            <div class="card-content">
+              <p>One of the most accessible Sequoia National Park trails,
+                this trail circles Round Meadow and features ecology exhibits.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Big Trees Trail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/crescent_meadow.jpg">
+            </div>
+            <div class="card-content">
+              <p>A scenic loop trail around the Crescent Meadow.
+                Most impressive when wildflowers are in bloom, wildlife sightings are common.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Crescent Meadow Loop Trail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/congress.jpg">
+            </div>
+            <div class="card-content">
+              <p>This popular, paved Sequoia hiking path loops through the heart of the Giant Sequoia Grove and is perfect for first-time visitors.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Congress Trail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/sequoia/tokopah.jpg">
+            </div>
+            <div class="card-content">
+              <p>Though strenuous, this trail to Alta Peak is considered to be one of the best day hikes in Sequoia National Park.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Tokopah Falls Trail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!--Places to Stay-->
+    <section id="hotels" class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <h3 class="center">Places to Stay</h3>
+        <hr><br>
+        <div class="row">
+          <div class="col s12 m4">
+            <h4 class="amenity-head">Sequoia & Kings Canyon Lodging</h4>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal1" class="modal-trigger">Wuksachi Lodge</a>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=64740%20Wuksachi%20Way%2C%20Sequoia%20National%20Park%2C%20CA%2093262+(Wuksachi%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="https://www.visitsequoia.com/lodging/wuksachi-lodge" target="_blank">Wuksachi Lodge</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal2" class="modal-trigger">John Muir Lodge</a>
+              <!-- Modal Structure -->
+              <div id="modal2" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=86728%20Highway%20180%2C%20Kings%20Canyon%20National%20Park%2C%20CA%2093633+(John%20Muir%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="https://www.visitsequoia.com/lodging/john-muir-lodge" target="_blank">John Muir Lodge</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal3" class="modal-trigger">Grant Grove Cabins</a>
+              <!-- Modal Structure -->
+              <div id="modal3" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=86728%20CA-180%2C%20Kings%20Canyon%20National%20park%2C%20CA%2093633+(Grant%20Grove%20Cabins)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="https://www.visitsequoia.com/lodging/grant-grove-cabins" target="_blank">Grant Grove Cabins</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal4" class="modal-trigger">Cedar Grove Lodge</a>
+              <!-- Modal Structure -->
+              <div id="modal4" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=General's%20Hwy%2C%20Sequoia%20and%20Kings%20Canyon%20National%20Park%2C%20CA%2093633+(Cedar%20Grove%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>                    </div>
+                   </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="https://www.visitsequoia.com/lodging/cedar-grove-lodge" target="_blank">Cedar Grove Lodge</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col s12 m4">
+              <h4 class="amenity-head ">General Inns & Hotels</h4>
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal5" class="modal-trigger">Comfort Inn & Suites</a>
+                <!-- Modal Structure -->
+                <div id="modal5" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=40820%20Sierra%20Dr%2C%20Three%20Rivers%2C%20CA%2093271+(Comfort%20Inn%20%26%20Suites)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="https://www.visitsequoia.com/lodging/cedar-grove-lodge" target="_blank">Comfort Inn & Suites</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal6" class="modal-trigger">Americas Best Value Inn Lazy J Ranch</a>
+                <!-- Modal Structure -->
+                <div id="modal6" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=39625%20Sierra%20Dr%2C%20Three%20Rivers%2C%20CA%2093271+(Americas%20Best%20Value%20Inn%20Lazy%20J%20Ranch)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="https://www.redlion.com/americas-best-value-inn/ca/three-rivers/lazy-j-ranch-americas-best-value-inn" target="_blank">Americas Best Value Inn Lazy J Ranch</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal7" class="modal-trigger">Sierra Lodge</a>
+                <!-- Modal Structure -->
+                <div id="modal7" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=3540%20Main%20St%2C%20Mammoth%20Lakes%2C%20CA%2093546+(Sierra%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="http://www.sierra-lodge.com/" target="_blank">Sierra Lodge</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+              <h4 class="amenity-head">Airbnb</h4>
+              <p><a href="https://www.airbnb.com/s/Sequoia-National-Park--Tulare-County--CA" target="_blank">Rent out an apartment, cottage or eclectic home for your stay.</a></p>
+          </div>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Sequoia%20national%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Good Eats -->
+    <section id="eats" class="section section-contact scrollspy">
+      <div class="container">
+        <h3 class="center">Where's the food?</h3>
+        <hr><br>
+        <h6>Besides your best bet of packing a lunch to go and picnicing on the trails...</h6>
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/sequoia/peaks_rest.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">The Peaks Restaurant</h3>
+                  <p>The Peaks Restaurant is Wuksachi Lodge's premier dining venue.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/sequoia/grant-grove.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Grant Grove Restaurant</h3>
+                  <p>Enjoy picturesque views in our recently redesigned restaurant while dining from menus featuring locally sourced, sustainable and organic ingredients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/sequoia/lodgepole.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Lodgepole Café</h3>
+                  <p>Pre-packaged grab-and-go items including sandwiches and salads featuring primarily local, sustainable ingredients are also available.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/sequoia/cedar-grove.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Cedar Grove Snack Bar</h3>
+                  <p>The Cedar Grove Café in the lodge serves light meals and snacks, and offers both indoor and outdoor seating with counter service.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/sequoia/montecito.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Montecito Sequoia Buffet</h3>
+                  <p>An all-inclusive buffet including meals, snacks and beverages.If you're a guest, it is included in your first night's stay!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+      <section id="images" class="section section-contact scrollspy">
+       <div class="container" style="max-width:70%;">
+          <h3 align="center">Image Gallery</h3>
+          <br />
+          <div id="loader" class="progress">
+             <div class="indeterminate"></div>
+          </div>
+          <br />
+          <div align="right">
+           <button type="button" name="add" id="add" class="btn cyan accent-4">Add</button>
+          </div>
+          <br />
+          <div id="image_data">
+        </div>
+      </div>
+
+      <div id="imageModal" class="modal fade" role="dialog">
+        <div class="modal-content">
+              <h4 class="modal-title">Add Image</h4>
+              <div class="row">
+                <form id="image_form" method="post" enctype="multipart/form-data">
+                 <p><label>Select Image</label>
+                 <input type="file" name="image" id="image" /></p><br />
+                 <input type="hidden" name="action" id="action" value="insert" />
+                 <input type="hidden" name="image_id" id="image_id" />
+                 <input type="submit" name="insert" id="insert" value="Insert" class="btn cyan accent-4" />
+                </form>
+               </div>
+               <div class="modal-footer">
+                <button type="button" class="btn grey lighten-2 grey-text modal-close" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer cyan accent-4">
+      <div class="footer-copyright cyan accent-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Other Things</h5>
+              <h6>
+                <a class="grey-text text-lighten-3" href="#!">Privacy and Terms</a>   |
+                <a class="grey-text text-lighten-3" href="careers.html">Careers</a>    |
+                <a class="grey-text text-lighten-3" href="news.html">News</a>
+              </h6>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <p>ParkSmith &copy; 2018</p>
+              <p>Designed & Coded by Rachel Waag</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--CDN Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 600,
+      transition: 500,
+      interval: 4000
+    });
+
+    //navbar change on scroll
+    window.onscroll = () => {
+      const nav = document.querySelector('#navbar');
+      if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    };
+
+    //Image Gallery AJAX
+    $(document).ready(function(){
+
+     fetch_data();
+
+    //activate modal
+     $('.modal').modal({
+         dismissible: true
+     });
+
+     //loader upon ajax request
+     $(document).ajaxStop(function(){
+        $("#loader").hide();
+     });
+     //loader hide when ajax is finished
+     $(document).ajaxStart(function(){
+         $("#loader").show();
+     });
+
+    //display images from database
+     function fetch_data()
+     {
+      var action = "fetch";
+      $.ajax({
+       url:"action.php",
+       method:"POST",
+       data:{action:action},
+       success:function(data)
+       {
+        $('#image_data').html(data);
+       }
+      })
+     }
+
+     //adds image
+     $('#add').click(function(){
+      $('#imageModal').modal('open');
+      $('#image_form')[0].reset();
+      $('.modal-title').text("Add Image");
+      $('#image_id').val('');
+      $('#action').val('insert');
+      $('#insert').val("Insert");
+     });
+     $('#image_form').submit(function(event){
+      event.preventDefault();
+      var image_name = $('#image').val();
+      if(image_name == '')
+      {
+       alert("Please Select Image");
+       return false;
+      }
+      else
+      {
+       var extension = $('#image').val().split('.').pop().toLowerCase();
+       if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
+       {
+        alert("Invalid Image File");
+        $('#image').val('');
+        return false;
+       }
+       else
+       {
+        $.ajax({
+         url:"action.php",
+         method:"POST",
+         data:new FormData(this),
+         contentType:false,
+         processData:false,
+         success:function(data)
+         {
+          fetch_data();
+          $('#image_form')[0].reset();
+          $('#imageModal').modal('close');
+         }
+        });
+      }
+    }
+  });
+
+  //delete image
+   $(document).on('click', '.delete', function(){
+        var image_id = $(this).attr("id");
+        var action = "delete";
+        if(confirm("Are you sure you want to remove this image from database?"))
+        {
+         $.ajax({
+          url:"action.php",
+          method:"POST",
+          data:{image_id:image_id, action:action},
+          success:function(data)
+          {
+           fetch_data();
+          }
+         })
+        }
+        else
+        {
+         return false;
+        }
+       });
+    });
+    </script>
+
+    <!-- Google Map API Doc -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyRe2jKq2Qkm904gNMwb54UZ6WymJg4aI&callback=initMap">
+    </script>
+
+  </body>
+</html>

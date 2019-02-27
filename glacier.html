@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CDN jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    // ScrollSpy
+    $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+      });
+
+      // sidenav
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+
+        //google map modals
+        $(function () {
+            //initialize all modals
+            $('.modal').modal();
+            //click on trigger
+            $('.modal-trigger').modal(open);
+        });
+      });
+    </script>
+    <!--CDN Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Thasadith" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ParkSmith</title>
+  </head>
+
+  <body class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="transparent z-depth-0" id="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo white-text">ParkSmith</a>
+            <!--mobile navbar icon-->
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons white-text">menu</i></a>
+            <!--navbar links-->
+            <ul class="right hide-on-med-and-down">
+              <li><a class="white-text" href="#hikes">Hikes</a></li>
+              <li><a class="white-text" href="#hotels">Places to Stay</a></li>
+              <li><a class="white-text" href="#eats">Good Eats</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--MOBILE navbar links-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#hikes">Hikes</a></li>
+      <li><a href="#hotels">Places to Stay</a></li>
+      <li><a href="#eats">Good Eats</a></li>
+    </ul>
+
+    <!--Slider Images-->
+    <section class="slider">
+      <ul class="slides black">
+        <li>
+          <img src="img/glacier/glacier_mast.JPG">
+          <!-- image 1 -->
+          <div class="caption center-align">
+            <section id="search" class="section section-search center white-text scrollspy">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <h1>Glacier</h1>
+                    <h4>National Park</h4>
+                    <h6>Montana, USA</h6>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  <!--National Park Cards-->
+  <div id="hikes" class="container">
+    <section class="section">
+      <h3 class="center">Glacier Hikes</h3>
+      <hr><br>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/highline_trail.jpg">
+            </div>
+            <div class="card-content">
+              <p>Explore Glacier’s high alpine ecosystem as you traverse across the Garden
+                Wall with expansive, breathtaking views every step of the way. This hike is strenuous and closed due to
+                fog or wind.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Highline Trail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/grinnel_trail.jpg">
+            </div>
+            <div class="card-content">
+              <p>Enjoy this day hike to the foot of one of the park’s most iconic glaciers, where the trail takes you past lakes,
+                cliffs and alpine meadows and offers possible glimpses of wildlife along the way.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Grinnell Glacier</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/pitamakan.jpg">
+            </div>
+            <div class="card-content">
+              <p>Explore the Two Medicine area on this epic loop that looks down glacier-carved, U-shaped valleys populated with lakes.
+                Swing past two lakes and climb two alpine passes connected by a goat trail with endless views.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Pitamakan - Dawson Loop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/iceberg.jpeg">
+            </div>
+            <div class="card-content">
+              <p>Hike to a cobalt-blue lake tucked below jagged, jaw-dropping cliffs populated with its namesake chunks of ice.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Iceberg Lake</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/hidden_lake.JPG">
+            </div>
+            <div class="card-content">
+              <p>Work your way across flower-covered alpine meadows, along a glacial moraine to the alpine Hidden Lake.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Hidden Lake Trail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image hide-on-med-only">
+              <img src="img/glacier/glacier_falls.JPG">
+            </div>
+            <div class="card-content">
+              <p>A level trail to St. Mary Falls. Continue to another pool and under a bridge to the foot of the taller and gorgeous Virginia Falls.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">St. Mary & Virgina Falls</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!--Places to Stay-->
+    <section id="hotels" class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <h3 class="center">Places to Stay</h3>
+        <hr><br>
+        <div class="row">
+          <div class="col s12 m4">
+            <h4 class="amenity-head">In-Park Lodging</h4>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal1" class="modal-trigger">Many Glacier Hotel</a>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=1%20Rte%203%2C%20Browning%2C%20MT%2059417+(Many%20Glacier%20Hotel)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="http://www.glaciernationalparklodges.com/lodging/many-glacier-hotel/" target="_blank">Many Glacier Hotel</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal2" class="modal-trigger">Cedar Creek Lodge</a>
+              <!-- Modal Structure -->
+              <div id="modal2" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=930%202nd%20Ave%20W%2C%20Columbia%20Falls%2C%20MT%2059912+(Cedar%20Creek%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="http://www.glaciernationalparklodges.com/lodging/cedar-creek-lodge/" target="_blank">Cedar Creek Lodge</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal3" class="modal-trigger">Swiftcurrent Motor Inn</a>
+              <!-- Modal Structure -->
+              <div id="modal3" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=Columbia%20Falls%2C%20MT%2059912+(Cedar%20Creek%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="http://www.glaciernationalparklodges.com/lodging/swiftcurrent-motor-inn-cabins/" target="_blank">Swiftcurrent Motor Inn</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Map Modals -->
+            <div>
+              <!-- Modal Trigger -->
+              <a style="cursor:pointer" data-target="modal4" class="modal-trigger">Rising Sun Cabins</a>
+              <!-- Modal Structure -->
+              <div id="modal4" class="modal" style="background-color:white;">
+                <div class="modal-content">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=Going-to-the-Sun%20Road%2C%20East%20Glacier%20Park%2C%20MT%2059434+(Rising%20Sun%20Cabins)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <br>
+                <a style="margin-top:10px;margin-bottom:10px;" href="http://www.glaciernationalparklodges.com/lodging/rising-sun-motor-inn-cabins/" target="_blank">Rising Sun Cabins</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col s12 m4">
+              <h4 class="amenity-head ">Outside the Park</h4>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal5" class="modal-trigger">Heather Mountain Lodge</a>
+                <!-- Modal Structure -->
+                <div id="modal5" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=5400%20Trans-Canada%20Hwy%2C%20Golden%2C%20BC%20V0A%201H0%2C%20Canada+(Heather%20Mountain%20Lodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="https://heathermountainlodge.com/" target="_blank">Heather Mountain Lodge</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal6" class="modal-trigger">Travelodge</a>
+                <!-- Modal Structure -->
+                <div id="modal6" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=350%20N%20Main%20St%2C%20Kalispell%2C%20MT%2059901-3947+(Travelodge)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="https://www.wyndhamhotels.com/travelodge/golden-british-columbia/travelodge-golden-sportsman-lodge/overview" target="_blank">Travelodge</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal7" class="modal-trigger">River to Peaks Inn</a>
+                <!-- Modal Structure -->
+                <div id="modal7" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=%20420%20Riverglen%2C%20Golden%2C%20BC%20V0A%201H0%2C%20Canada+(River%20to%20Peaks%20Inn)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="http://riverstopeaks.com/" target="_blank">River to Peaks Inn</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal8" class="modal-trigger">Winston Lodge & Spa</a>
+                <!-- Modal Structure -->
+                <div id="modal8" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=1593%20Cache%20close%2C%20Golden%2C%20BC%20V0A%201H0%2C%20Canada+(Winston%20Lodge%20%26%20Spa)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="http://winstonlodge.com/" target="_blank">Winston Lodge & Spa</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Map Modals -->
+              <div>
+                <!-- Modal Trigger -->
+                <a style="cursor:pointer" data-target="modal9" class="modal-trigger">Prestige Inn Golden</a>
+                <!-- Modal Structure -->
+                <div id="modal9" class="modal" style="background-color:white;">
+                  <div class="modal-content">
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=1049%20Trans%20Canada%20Hwy%20North%2C%20Golden%2C%20BC%20V0A%201H2%2C%20Canada+(Prestige%20Inn%20Golden)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </div>
+                  <br>
+                  <a style="margin-top:10px;margin-bottom:10px;" href="https://www.prestigehotelsandresorts.com/locations/golden/packages/" target="_blank">Prestige Inn Golden</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+              <h4 class="amenity-head">Airbnb</h4>
+              <p><a href="https://www.airbnb.com/s/West-Glacier--MT" target="_blank">Rent out an apartment, cottage or eclectic home for your stay.</a></p>
+          </div>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=glacier%20national%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Good Eats -->
+    <section id="eats" class="section section-contact scrollspy">
+      <div class="container">
+        <h3 class="center">Where's the food?</h3>
+        <hr><br>
+        <h6>Besides your best bet of packing a lunch to go and picnicing on the trails...</h6>
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/glacier/belton.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Belton Grill Dining Room & Tap Room</h3>
+                  <p>Our philosophy is you can eat anywhere but, nowhere else can you have a dining experience like what we offer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/glacier/highland_rest.jpeg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Glacier Highland Restaurant</h3>
+                  <p>Known for their pies and pancakes, you can't go wrong enjoying a breakfast here before a day of adventure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/glacier/the-wandering-gringo.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">The Wandering Gringo</h3>
+                  <p>Affordable, wholesome foods. And you get a bang for your buck!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/glacier/grille_and_pizza.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Glacier Grille & Pizza</h3>
+                  <p>Because we all know you can't live without some good ole fashioned pizza.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12">
+            <div class="card horizontal">
+              <div class="card-image hide-on-med-and-down">
+                <img src="img/glacier/many-glaciers-hotel.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3 class="amenity-head">Many Glacier Hotel</h3>
+                  <p>Worth a visit for it's history and yummy eats!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+      <section id="images" class="section section-contact scrollspy">
+       <div class="container" style="max-width:70%;">
+          <h3 align="center">Image Gallery</h3>
+          <br />
+          <div id="loader" class="progress">
+             <div class="indeterminate"></div>
+          </div>
+          <br />
+          <div align="right">
+           <button type="button" name="add" id="add" class="btn cyan accent-4">Add</button>
+          </div>
+          <br />
+          <div id="image_data">
+        </div>
+      </div>
+
+      <div id="imageModal" class="modal fade" role="dialog">
+        <div class="modal-content">
+              <h4 class="modal-title">Add Image</h4>
+              <div class="row">
+                <form id="image_form" method="post" enctype="multipart/form-data">
+                 <p><label>Select Image</label>
+                 <input type="file" name="image" id="image" /></p><br />
+                 <input type="hidden" name="action" id="action" value="insert" />
+                 <input type="hidden" name="image_id" id="image_id" />
+                 <input type="submit" name="insert" id="insert" value="Insert" class="btn cyan accent-4" />
+                </form>
+               </div>
+               <div class="modal-footer">
+                <button type="button" class="btn grey lighten-2 grey-text modal-close" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer cyan accent-4">
+      <div class="footer-copyright cyan accent-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Other Things</h5>
+              <h6>
+                <a class="grey-text text-lighten-3" href="#!">Privacy and Terms</a>   |
+                <a class="grey-text text-lighten-3" href="careers.html">Careers</a>    |
+                <a class="grey-text text-lighten-3" href="news.html">News</a>
+              </h6>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <p>ParkSmith &copy; 2018</p>
+              <p>Designed & Coded by Rachel Waag</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--CDN Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 600,
+      transition: 500,
+      interval: 4000
+    });
+
+    //navbar change on scroll
+    window.onscroll = () => {
+      const nav = document.querySelector('#navbar');
+      if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    };
+
+    //Image Gallery AJAX
+    $(document).ready(function(){
+
+     fetch_data();
+
+    //activate modal
+     $('.modal').modal({
+         dismissible: true
+     });
+
+     //loader upon ajax request
+     $(document).ajaxStop(function(){
+        $("#loader").hide();
+     });
+     //loader hide when ajax is finished
+     $(document).ajaxStart(function(){
+         $("#loader").show();
+     });
+
+    //display images from database
+     function fetch_data()
+     {
+      var action = "fetch";
+      $.ajax({
+       url:"action.php",
+       method:"POST",
+       data:{action:action},
+       success:function(data)
+       {
+        $('#image_data').html(data);
+       }
+      })
+     }
+
+     //adds image
+     $('#add').click(function(){
+      $('#imageModal').modal('open');
+      $('#image_form')[0].reset();
+      $('.modal-title').text("Add Image");
+      $('#image_id').val('');
+      $('#action').val('insert');
+      $('#insert').val("Insert");
+     });
+     $('#image_form').submit(function(event){
+      event.preventDefault();
+      var image_name = $('#image').val();
+      if(image_name == '')
+      {
+       alert("Please Select Image");
+       return false;
+      }
+      else
+      {
+       var extension = $('#image').val().split('.').pop().toLowerCase();
+       if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
+       {
+        alert("Invalid Image File");
+        $('#image').val('');
+        return false;
+       }
+       else
+       {
+        $.ajax({
+         url:"action.php",
+         method:"POST",
+         data:new FormData(this),
+         contentType:false,
+         processData:false,
+         success:function(data)
+         {
+          fetch_data();
+          $('#image_form')[0].reset();
+          $('#imageModal').modal('close');
+         }
+        });
+      }
+    }
+  });
+
+  //delete image
+   $(document).on('click', '.delete', function(){
+        var image_id = $(this).attr("id");
+        var action = "delete";
+        if(confirm("Are you sure you want to remove this image from database?"))
+        {
+         $.ajax({
+          url:"action.php",
+          method:"POST",
+          data:{image_id:image_id, action:action},
+          success:function(data)
+          {
+           fetch_data();
+          }
+         })
+        }
+        else
+        {
+         return false;
+        }
+       });
+    });
+    </script>
+
+    <!-- Google Map API Doc -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyRe2jKq2Qkm904gNMwb54UZ6WymJg4aI&callback=initMap">
+    </script>
+
+  </body>
+</html>

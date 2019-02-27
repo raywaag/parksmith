@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+.section-search input{
+  padding: 5px !important;
+  font-size: 18px !important;
+  width:90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+.slider{
+  margin-top:-15%;
+}
+.caption{
+  margin-top:12%;
+}
+.card-image img{
+  height: 200px;
+}
+/* Fonts */
+body{
+  font-family: 'Thasadith', sans-serif;
+}
+.brand-logo, nav, .amenity-head{
+  font-family: 'Unica One', cursive;
+}
+.amenity-head {
+  color:#00b8d4;
+}
+.amenity-head a{
+  color:#00b8d4;
+}
+
+/* Navbar scroll change*/
+nav{
+  background-color: transparent;
+  box-shadow: none;
+}
+nav.scroll {
+  background-color: #00b8d4;
+}
+
+.mntn{
+  background-image: url("../img/home/slider1.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+/*Google Map API*/
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
+
+/*news article comments*/
+.content{
+  border: 0px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 auto;
+  width: 80%;
+}
+.post{
+  background:#fff;
+  border-radius:7px;
+  padding:3%;
+  margin:2% 0 2% 0;
+}
+.post h1{
+    font-weight: normal;
+    font-size: 40px;
+    margin-top:5px;
+}
+.post a.link{
+    text-decoration: none;
+}
+.post-text{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: serif;
+    color: gray;
+    text-align: justify;
+}
+.post-action{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.like,.unlike{
+    border: 0;
+    background: none;
+    letter-spacing: 1px;
+    color: lightseagreen;
+}
+.like,.unlike:hover{
+    cursor: pointer;
+}
+/* media query */
+@media (max-width: 800px){
+    .content{
+        width: 95%;
+    }
+}

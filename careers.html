@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CDN jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <!--CDN Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Thasadith" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ParkSmith</title>
+  </head>
+
+  <body class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="transparent z-depth-0" id="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo white-text">ParkSmith</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Slider Images-->
+    <section class="slider">
+      <ul class="slides black">
+        <li>
+          <img src="img/careers/careers.jpg">
+          <!-- image 1 -->
+          <div class="caption center-align">
+            <section class="section section-search center white-text scrollspy">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <h1>Currently there are no openings</h1>
+                    <h4>Sign up for job opening notifications</h4>
+                    <div class="input-field">
+                      <input type="email" id="email" class="white grey-text" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer cyan accent-4">
+      <div class="footer-copyright cyan accent-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Other Things</h5>
+              <h6>
+                <a class="grey-text text-lighten-3" href="#!">Privacy and Terms</a>   |
+                <a class="grey-text text-lighten-3" href="#!">Careers</a>    |
+                <a class="grey-text text-lighten-3" href="news.html">News</a>
+              </h6>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <p>ParkSmith &copy; 2018</p>
+              <p>Designed & Coded by Rachel Waag</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--CDN Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 900,
+      transition: 500,
+      interval: 4000
+    });
+
+    //navbar change on scroll
+    window.onscroll = () => {
+      const nav = document.querySelector('#navbar');
+      if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+    };
+
+    </script>
+
+  </body>
+</html>
